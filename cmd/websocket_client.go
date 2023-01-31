@@ -1,4 +1,4 @@
-package collection
+package main
 
 // const MEETUP_URI = "ws://stream.meetup.com/2/rsvps"
 
@@ -6,7 +6,7 @@ type WebsocketClient struct {
 	Hml *HybridMessageLogger
 }
 
-func (client *WebsocketClient) NewWebsocketClient() *WebsocketClient {
+func NewWebsocketClient() *WebsocketClient {
 	hml := NewHybridMessageLogger()
 	return &WebsocketClient{Hml: hml}
 }
