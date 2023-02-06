@@ -5,6 +5,9 @@
 *.so
 *.dylib
 
+bin
+
+NOTES.md
 # Test binary, built with `go test -c`
 *.test
 
